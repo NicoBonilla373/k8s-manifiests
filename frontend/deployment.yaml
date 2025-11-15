@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-frontend
+  namespace: users-app
+  labels:
+    app: users-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: users-frontend
+  template:
+    metadata:
+      labels:
+        app: users-frontend
+    spec:
+      containers:
+      - name: users-frontend
+        image: 211865220371.dkr.ecr.us-east-1.amazonaws.com/users-frontend:prod
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"

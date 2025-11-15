@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  ALLOWED_HOSTS: '*'
+  DB_HOST: users-db.cc1gm1bc4kuk.us-east-1.rds.amazonaws.com
+  DB_NAME: postgres
+  DB_PASSWORD: labpassword123
+  DB_PORT: "5432"
+  DB_USER: masteruser
+  DEBUG: "True"
+  NOTIFICATION_SERVICE_URL: http://notification-service:5000
+  SECRET_KEY: django-insecure-key-for-development-only
+kind: ConfigMap
+metadata:
+  name: backend-env-config
+  namespace: users-app
