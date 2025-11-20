@@ -1,0 +1,37 @@
+========================================
+RESUMEN DE PRUEBAS DE SEGURIDAD - SSDLC
+========================================
+Fecha: Fri Nov 14 20:10:34 UTC 2025
+Proyecto: Gestión de Usuarios - EKS Deployment
+
+1. SAST (Análisis Estático de Código)
+   - Herramienta: Bandit
+   - Archivo: bandit-report.txt
+   - Vulnerabilidades encontradas: 0
+
+2. SCA (Análisis de Dependencias)
+   Backend:
+   - Herramienta: Safety
+   - Archivo: safety-report.txt
+   
+   Frontend:
+   - Herramienta: npm audit
+   - Archivo: npm-audit-report.txt
+   - Vulnerabilidades: 0
+Ver archivo
+
+3. Análisis de Imágenes Docker
+   - Herramienta: Trivy
+   - Imágenes analizadas: 3
+   - Archivos: trivy-backend.json, trivy-frontend.json, trivy-notification.json
+
+4. DAST (Análisis Dinámico)
+   - Herramienta: Nikto
+   - URLs analizadas:
+     * Frontend: http://k8s-usersapp-usersfro-edc1dae97c-29dd5fdefe6cc358.elb.us-east-1.amazonaws.com
+     * API Gateway: https://v1yi4o5fmd.execute-api.us-east-1.amazonaws.com/prod/users
+   - Archivos: nikto-frontend-report.txt, nikto-api-report.txt
+
+========================================
+Archivos generados en: /home/ubuntu/
+========================================

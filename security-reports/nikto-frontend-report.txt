@@ -1,0 +1,7 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: k8s-usersapp-usersfro-edc1dae97c-29dd5fdefe6cc358.elb.us-east-1.amazonaws.com
++ Target Port: 80
++ GET /: Server leaks inodes via ETags, header found with file /, fields: 0x69178ac5 0x26a 
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /robots.txt: "robots.txt" retrieved but it does not contain any 'disallow' entries (which is odd).
++ -3092: GET /js: /js: This might be interesting...

@@ -1,0 +1,10 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: v1yi4o5fmd.execute-api.us-east-1.amazonaws.com
++ Target Port: 443
++ GET /prod/users/prod/users/: The anti-clickjacking X-Frame-Options header is not present.
++ GET /prod/users/prod/users/: Uncommon header 'x-amzn-trace-id' found, with contents: Root=1-69178c7f-0213b457072086d02e6bf2e3
++ GET /prod/users/prod/users/: Uncommon header 'x-amz-apigw-id' found, with contents: UDLj9GCooAMEl0A=
++ GET /prod/users/prod/users/: Uncommon header 'x-amzn-requestid' found, with contents: 51ccae77-9502-45a5-81ad-acfd7a27b031
++ GET /prod/users/prod/users/RiXY2lCK.cellsprint: Uncommon header 'x-amzn-errortype' found, with contents: MissingAuthenticationTokenException
++ GET /prod/users/: Server is using a wildcard certificate: '*.execute-api.us-east-1.amazonaws.com'
++ -2091: GET /prod/users/prod/users/../webserver.ini: /prod/users/../webserver.ini: Nuca WebServer allows retrieval of the web server configuration.
